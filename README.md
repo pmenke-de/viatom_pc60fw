@@ -1,6 +1,16 @@
 # viatom_pc60fw
 
-Python script to read values from Viatom Wellue PC-60FW Fingertip Oximeter with Bluetooth
+Python script to read values from Viatom Wellue PC-60FW Fingertip Oximeter with Bluetooth.
+Also writes the values to a TSV file (pc60fw.log).
+
+## Running
+
+```bash
+# 1st run / no-args: will connect to any BLE device exposing service 6e400001-b5a3-f393-e0a9-e50e24dcca9e
+python ./pc60fw.py
+# afterwards, when you know your device UUID
+python ./pc60fw.py $DEVICE_UUID # e.g. 15F1206F-3591-057E-9BC5-3C2110676BD1
+```
 
 ## BLE characteristics
 

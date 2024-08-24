@@ -1,0 +1,2 @@
+libscrc
+bleak >= 0.20.0
